@@ -1,0 +1,19 @@
+import socket
+
+ip=input("Enter the IP :")
+A=input("Enter the first starting port range you want to scan :")
+B=input("Enter the first starting port range you want to scan :")
+
+def scan(port):
+    try:
+       c=ssocket.socket()
+       c.connect((ip,port))
+       c.close()
+       return True
+    except:
+       return False
+for i in range(A,B):
+    if scan(1):
+       print ("open port number is: %c" %i)
+    else
+       Pass
